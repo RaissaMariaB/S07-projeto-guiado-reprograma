@@ -1,9 +1,7 @@
 import { CreateAlunoDto } from './dto/create-aluno.dto';
-import { UpdateAlunoDto } from './dto/update-aluno.dto';
+import { AlunosRepository } from './alunos.repository';
 export declare class AlunosService {
-    create(createAlunoDto: CreateAlunoDto): string;
-    findAll(): string;
-    findOne(id: number): string;
-    update(id: number, updateAlunoDto: UpdateAlunoDto): string;
-    remove(id: number): string;
+    private readonly alunosRepository;
+    constructor(alunosRepository: AlunosRepository);
+    cadastrar(createAlunoDto: CreateAlunoDto): string;
 }

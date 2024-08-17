@@ -21,7 +21,7 @@ let AlunosController = class AlunosController {
         this.alunosService = alunosService;
     }
     cadastrar(createAlunoDto) {
-        return this.alunosService.create(createAlunoDto);
+        return this.alunosService.cadastrar(createAlunoDto);
     }
 };
 exports.AlunosController = AlunosController;
